@@ -1,0 +1,12 @@
+Visit [oh-my-posh] website at chrome:
+---------------------------------------
+---------------------------------------
+---Installation Guide [Posh]
+-->winget install JanDeDobbeleer.OhMyPosh --source winget --scope user --force
+-->PATH-------$env:Path += ";C:\Users\user\AppData\Local\Programs\oh-my-posh\bin"
+-->winget upgrade JanDeDobbeleer.OhMyPosh --source winget --scope user --force
+-->notepad $PROFILE
+-->oh-my-posh init pwsh | Invoke-Expression --------[Write this in notepad file above]
+-->. $PROFILE
+-----Just visit themes/Oh my Posh
+-----https://www.youtube.com/watch?v=ila-keQMhGU
