@@ -1,0 +1,43 @@
+-->Delete Terminal [WINDOWS POWERSHELL]
+----------------------------------------------------
+----------------------------------------------------
+-->Delete Fonts->Settings->Personalization->Fonts
+>>>CaskaydiaCove Nerd Font
+>>>CaskaydiaCove Nerd Font Mono
+>>>CaskaydiaCove NF
+----------------------------------------------------
+----------------------------------------------------
+----------------------------------------------------
+->Removing Oh My Posh completely (PowerShell installation)
+->If you've installed Oh My Posh via the PowerShell module method and want to remove it entirely, follow these steps:
+Open PowerShell as administrator: 
+----------------------------------------------------
+>>>Search for PowerShell in the Start menu, right-click it, and select "Run as administrator".
+>>>Remove-Item $env:POSH_PATH -Force -Recurse                  $ run this command on powershell [terminal]
+>>>Uninstall-Module oh-my-posh -AllVersions 
+>>>code $PROFILE 
+   ----->>>(If VSCode isn't installed or preferred, you can use notepad $PROFILE instead)
+            Remove any lines related to Oh My Posh, such as:
+        >>>Import-Module oh-my-posh
+        >>>Set-PoshPrompt night-owl
+-------------------------------------------------------
+>>>Restart your terminal or shell to ensure the changes take effect. 
+   ----->>>Remove-Item -Force -Recurse
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+>>>>>>Removing Oh My Posh (other installation methods)
+      ------->>winget uninstall JanDeDobbeleer.OhMyPosh   
+      ------->>Manual Installation: Locate and delete the Oh My Posh executable, and remove its directory from the system's PATH variable.
+      ------->>Scoop: scoop uninstall oh-my-posh
+------------------------------------------------------------------
+>>>>>>Add/Remove Programs (Windows): 
+      ------->>If Oh My Posh is listed, uninstall it like any other program.
+>>>>>>Remember to restart your terminal or shell after uninstalling, regardless of the method used, to ensure the changes take effect.
+------------------------------------------------------------------
+>>>>>>Remove %LOCALAPPDATA%\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe 
+      [It is terminal file -- delete this if you want to reset or reinstall the terminal]
+-------------------------------------------------------------------
+
